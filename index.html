@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <title>max</title>
+<body>
+  <h1>numero massimo:</h1>
+numero1:<input type="text" id=A value=0 /><br>
+numero2:<input type="text" id=B value=0 /><br>
+numero3:<input type="text" id=C value=0 /><br>
+<input type=button value=visualizza onclick="maxminmed();" />
+<div id="OT"></div><br>
+
+<script>
+function maxminmed(){
+var a, b, c, max;
+
+a=parseInt(A.value);
+b=parseInt(B.value);
+c=parseInt(C.value);
+
+if(a>b){max=a;}
+else {max=b;}
+
+if(c>max){max=c;}
+
+
+
+OT.innerHTML='numero massimo:'+max+'';
+}
+
+</script>
+</body>
+</html>
